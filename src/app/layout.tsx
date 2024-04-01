@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Titulo from "./components/Titulo";
-
 export const metadata: Metadata = {
   title: "Tontera",
   description: "Custom Open Tibia Server",
@@ -18,7 +17,7 @@ export default function RootLayout({
       <head>
         <link rel="shortcut icon" href="./logo.png" type="image/x-icon" />
       </head>
-      <body>
+      <body className="bg-gradient-to-b from-black to-blue-500">
         <Titulo />
         {children}
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
